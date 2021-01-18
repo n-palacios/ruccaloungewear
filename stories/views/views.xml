@@ -40,11 +40,12 @@
 
     <!-- Top menu item -->
 
-    <menuitem name="stories" id="stories.menu_root"/>
+    <menuitem name="Menu" id="stories.menu_root"/>
 
     <!-- menu categories -->
-    <menuitem name="Menu 1" id="my_module.menu_1" parent="my_module.menu_root"/>
-    <menuitem name="Menu 2" id="my_module.menu_2" parent="my_module.menu_root"/>
+    <menuitem name="Collection" id="stories.collection" parent="stories.menu_root"/>
+    <menuitem name="Stories" id="stories.story" parent="stories.menu_root"/>
+    <menuitem name="Serial codes" id="stories.serials" parent="stories.menu_root"/>
     <!-- actions -->
     <!--
     <menuitem name="List" id="my_module.menu_1_list" parent="my_module.menu_1"
