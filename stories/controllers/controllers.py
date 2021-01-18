@@ -1,20 +1,20 @@
 # -*- coding: utf-8 -*-
 from odoo import http
 
-# class MyModule(http.Controller):
-#     @http.route('/my_module/my_module/', auth='public')
-#     def index(self, **kw):
-#         return "Hello, world"
+class MyModule(http.Controller):
+    @http.route('/stories/collection/', auth='public')
+    def index(self, **kw):
+        return "Hello, world"
 
-#     @http.route('/my_module/my_module/objects/', auth='public')
-#     def list(self, **kw):
-#         return http.request.render('my_module.listing', {
-#             'root': '/my_module/my_module',
-#             'objects': http.request.env['my_module.my_module'].search([]),
-#         })
+    @http.route('/stories/collection/objects/', auth='public')
+    def list(self, **kw):
+        return http.request.render('stories.collection', {
+            'root': '/stories/collection',
+            'objects': http.request.env['stories.collection'].search([]),
+        })
 
-#     @http.route('/my_module/my_module/objects/<model("my_module.my_module"):obj>/', auth='public')
-#     def object(self, obj, **kw):
-#         return http.request.render('my_module.object', {
-#             'object': obj
-#         })
+    @http.route('/stories/collection/objects/<model("stories.collection"):obj>/', auth='public')
+    def object(self, obj, **kw):
+        return http.request.render('stories.object', {
+            'object': obj
+        })

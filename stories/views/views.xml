@@ -14,19 +14,16 @@
     </record>
 
     <!-- actions opening views on models -->
-    <!--
     <record model="ir.actions.act_window" id="stories.action_window">
       <field name="name">Collection window</field>
       <field name="res_model">stories.collection</field>
       <field name="view_mode">tree,form</field>
     </record>
-    -->
 
     <!-- server action to the one above -->
-    <!--
-    <record model="ir.actions.server" id="my_module.action_server">
-      <field name="name">my_module server</field>
-      <field name="model_id" ref="model_my_module_my_module"/>
+    <record model="ir.actions.server" id="stories.action_server">
+      <field name="name">Stories/Collection server</field>
+      <field name="model_id" ref="model_stories_collection"/>
       <field name="state">code</field>
       <field name="code">
         action = {
@@ -36,7 +33,6 @@
         }
       </field>
     </record>
-    -->
 
     <!-- Top menu item -->
 
@@ -48,10 +44,10 @@
     <menuitem name="Serial codes" id="stories.serials" parent="stories.menu_root"/>
     <!-- actions -->
     <!--
-    <menuitem name="List" id="my_module.menu_1_list" parent="my_module.menu_1"
-              action="my_module.action_window"/>
-    <menuitem name="Server to list" id="my_module" parent="my_module.menu_2"
-              action="my_module.action_server"/>
-    -->
+    <menuitem name="List" id="stories.menu_1_list" parent="stories.collection"
+              action="stories.action_window"/>
+    <menuitem name="Server to list" id="my_module" parent="stories.menu_2"
+              action="stories.action_server"/>
+     -->
   </data>
 </odoo>

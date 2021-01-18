@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_stories_collection,stories.collection,model_stories_collection,,1,0,0,0
+access_stories_collection,stories.collection,model_stories_collection,,1,1,1,1
+access_stories_story,stories.story,model_stories_story,,1,1,1,1
+access_stories_serial,stories.serial,model_stories_serial,,1,1,1,1
