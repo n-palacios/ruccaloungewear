@@ -36,12 +36,12 @@
 
     <!-- Top menu item -->
 
-    <menuitem name="Menu" id="stories.menu_root"/>
+    <menuitem groups="base.group_user" name="Menu" id="stories.menu_root"/>
 
     <!-- menu categories -->
-    <menuitem name="Collection" id="stories.collection" parent="stories.menu_root"/>
-    <menuitem name="Stories" id="stories.story" parent="stories.menu_root"/>
-    <menuitem name="Serial codes" id="stories.serials" parent="stories.menu_root"/>
+    <menuitem groups="base.group_user" name="Collection" id="stories.collection" parent="stories.menu_root"/>
+    <menuitem groups="base.group_user" name="Stories" id="stories.story" parent="stories.menu_root"/>
+    <menuitem groups="base.group_user" name="Serial codes" id="stories.serials" parent="stories.menu_root"/>
     <!-- actions -->
     <!--
     <menuitem name="List" id="stories.menu_1_list" parent="stories.collection"
