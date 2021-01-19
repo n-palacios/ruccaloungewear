@@ -5,10 +5,16 @@ from odoo import models, fields, api
 
 class Collection(models.Model):
     _name = 'my_module.my_module'
+    _description = 'Collection of loungewear.'
 
     name = fields.Char(
         string='Name',
         help='Name of the collection'
+    )
+
+    description = fields.Text(
+        string='Description',
+        help='Detailed description of the collection.'
     )
 
     launch_date = fields.Date(
@@ -17,8 +23,11 @@ class Collection(models.Model):
     )
 
 
+
+
 class Story(models.Model):
     _name = 'my_module.story'
+    _description = 'Textual story of each user associated with a purchased unit.'
 
     serial = fields.Many2one(
         string='Serial code',
@@ -40,11 +49,22 @@ class Story(models.Model):
 
 class Serial(models.Model):
     _name = 'my_module.serial'
+    _description = 'Serial code associated with a collection.'
 
     code = fields.Char(
         string='Serial code',
         help='Unique serial code for a garment in a collection.'
     )
+
+    collection = fields.Many2one(
+        string='Collection',
+        help='Rucca collection associated with this serial.',
+        comodel_name='stories.collection',
+        ondelete='set null'
+    )
+
+class ProductTemplate(models.Model):
+    _inherit = 'product.template'
 
     collection = fields.Many2one(
         string='Collection',

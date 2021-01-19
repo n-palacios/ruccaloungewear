@@ -9,6 +9,7 @@
         <tree>
           <field name="name"/>
           <field name="launch_date"/>
+          <field name="description"/>
         </tree>
       </field>
     </record>
@@ -40,13 +41,13 @@
     <!-- actions opening views on models -->
 
     <record model="ir.actions.act_window" id="my_module.action_window">
-      <field name="name">my_module window</field>
+      <field name="name">Collections</field>
       <field name="res_model">my_module.my_module</field>
       <field name="view_mode">tree,form</field>
     </record>
 
     <record model="ir.actions.act_window" id="my_module.action_window2">
-      <field name="name">Stories window</field>
+      <field name="name">Stories</field>
       <field name="res_model">my_module.story</field>
       <field name="view_mode">tree,form</field>
     </record>
@@ -70,18 +71,11 @@
 
     <!-- Top menu item -->
 
-    <menuitem name="my_module" id="my_module.menu_root"/>
+    <menuitem name="Rucca Stories" id="my_module.menu_root"/>
 
-    <!-- menu categories -->
-    <menuitem name="Menu 1" id="my_module.menu_1" parent="my_module.menu_root"/>
-    <menuitem name="Menu 2" id="my_module.menu_2" parent="my_module.menu_root"/>
-    <!-- actions -->
-    <menuitem name="List" id="my_module.menu_1_list" parent="my_module.menu_1"
-              action="my_module.action_window"/>
-    <menuitem name="List2" id="my_module.menu_1_list2" parent="my_module.menu_1"
-              action="my_module.action_window2"/>
+    <!-- menu actions -->
+    <menuitem name="Collections" id="my_module.collections_menu" parent="my_module.menu_root" action="my_module.action_window"/>
+    <menuitem name="Stories" id="my_module.stories_menu" parent="my_module.menu_root" action="my_module.action_window2"/>
 
-    <menuitem name="Server to list" id="my_module" parent="my_module.menu_2"
-              action="my_module.action_server"/>
   </data>
 </odoo>
