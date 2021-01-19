@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_my_module_my_module,my_module.my_module,model_my_module_my_module,,1,1,1,1
+access_my_module_story,my_module.story,model_my_module_story,,1,1,1,1
+access_my_module_serial,my_module.serial,model_my_module_serial,,1,1,1,1
