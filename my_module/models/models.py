@@ -4,7 +4,7 @@ from odoo import models, fields, api
 
 
 class Collection(models.Model):
-    _name = 'my_module.my_module'
+    _name = 'my_module.collection'
     _description = 'Collection of loungewear.'
 
     name = fields.Char(
@@ -19,10 +19,9 @@ class Collection(models.Model):
 
     launch_date = fields.Date(
         string='Launch date',
-        help='Launch date of the collection.'
+        help='Launch date of the collection.',
+        default=fields.Date.today()
     )
-
-
 
 
 class Story(models.Model):
@@ -59,7 +58,7 @@ class Serial(models.Model):
     collection = fields.Many2one(
         string='Collection',
         help='Rucca collection associated with this serial.',
-        comodel_name='stories.collection',
+        comodel_name='my_module.collection',
         ondelete='set null'
     )
 
@@ -69,6 +68,6 @@ class Serial(models.Model):
 #     collection = fields.Many2one(
 #         string='Collection',
 #         help='Rucca collection associated with this serial.',
-#         comodel_name='stories.collection',
+#         comodel_name='my_module.collection',
 #         ondelete='set null'
 #     )

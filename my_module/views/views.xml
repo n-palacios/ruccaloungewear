@@ -4,7 +4,7 @@
 
     <record model="ir.ui.view" id="my_module.collections_list">
       <field name="name">Collections</field>
-      <field name="model">my_module.my_module</field>
+      <field name="model">my_module.collection</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
@@ -40,24 +40,30 @@
 
     <!-- actions opening views on models -->
 
-    <record model="ir.actions.act_window" id="my_module.action_window">
+    <record model="ir.actions.act_window" id="my_module.action_collections_window">
       <field name="name">Collections</field>
-      <field name="res_model">my_module.my_module</field>
+      <field name="res_model">my_module.collection</field>
       <field name="view_mode">tree,form</field>
     </record>
 
-    <record model="ir.actions.act_window" id="my_module.action_window2">
+    <record model="ir.actions.act_window" id="my_module.action_stories_window">
       <field name="name">Stories</field>
       <field name="res_model">my_module.story</field>
       <field name="view_mode">tree,form</field>
     </record>
 
+    <record model="ir.actions.act_window" id="my_module.action_serials_window">
+      <field name="name">Serial Codes</field>
+      <field name="res_model">my_module.serial</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
 
     <!-- server action to the one above -->
-
+    <!--
     <record model="ir.actions.server" id="my_module.action_server">
       <field name="name">my_module server</field>
-      <field name="model_id" ref="model_my_module_my_module"/>
+      <field name="model_id" ref="model_my_module_collection"/>
       <field name="state">code</field>
       <field name="code">
         action = {
@@ -67,6 +73,7 @@
         }
       </field>
     </record>
+    -->
 
 
     <!-- Top menu item -->
@@ -74,8 +81,9 @@
     <menuitem name="Rucca Stories" id="my_module.menu_root"/>
 
     <!-- menu actions -->
-    <menuitem name="Collections" id="my_module.collections_menu" parent="my_module.menu_root" action="my_module.action_window"/>
-    <menuitem name="Stories" id="my_module.stories_menu" parent="my_module.menu_root" action="my_module.action_window2"/>
+    <menuitem name="Collections" id="my_module.collections_menu" parent="my_module.menu_root" action="my_module.action_collections_window"/>
+    <menuitem name="Stories" id="my_module.stories_menu" parent="my_module.menu_root" action="my_module.action_stories_window"/>
+    <menuitem name="Serial Codes" id="my_module.stories_menu" parent="my_module.menu_root" action="my_module.action_serials_window"/>
 
   </data>
 </odoo>
