@@ -30,7 +30,9 @@ class Story(models.Model):
 
     serial = fields.Many2one(
         string='Serial code',
-        help='Serial code associated with this story.'
+        help='Serial code associated with this story.',
+        comodel_name='rucca.serial',
+        ondelete='set null'
     )
 
     user = fields.Many2one(
