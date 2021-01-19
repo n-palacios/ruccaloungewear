@@ -45,7 +45,7 @@
       <field name="view_mode">tree,form</field>
     </record>
 
-    <record model="ir.actions.act_window" id="my_module.action_window2">
+    <record model="ir.actions.act_window" id="my_module.action_windoww">
       <field name="name">Stories window</field>
       <field name="res_model">my_module.stories</field>
       <field name="view_mode">tree,form</field>

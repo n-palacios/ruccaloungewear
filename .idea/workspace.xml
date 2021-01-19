@@ -13,11 +13,16 @@
       <change beforePath="$PROJECT_DIR$/my_module/demo/demo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/my_module/demo/demo.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_module/models/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_module/models/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_module/views/views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/my_module/views/views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/stories/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/controllers/controllers.py" beforeDir="false" afterPath="$PROJECT_DIR$/stories/controllers/controllers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/demo/demo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stories/demo/demo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/stories/security/ir.model.access.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/views/views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stories/views/views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/__manifest__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/controllers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/controllers/controllers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/demo/demo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/models/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/security/ir.model.access.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/views/templates.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/views/views.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610985326055</updated>
-      <workItem from="1610985330242" duration="12185000" />
+      <workItem from="1610985330242" duration="12607000" />
     </task>
     <servers />
   </component>
