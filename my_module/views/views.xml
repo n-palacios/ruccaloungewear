@@ -2,14 +2,36 @@
   <data>
     <!-- explicit list view definition -->
 
-    <record model="ir.ui.view" id="my_module.list">
-      <field name="name">my_module list</field>
+    <record model="ir.ui.view" id="my_module.collections_list">
+      <field name="name">Collections</field>
       <field name="model">my_module.my_module</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="launch_date"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="my_module.stories_list">
+      <field name="name">Collections</field>
+      <field name="model">my_module.story</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="serial"/>
+          <field name="user"/>
+          <field name="story"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="my_module.serials_list">
+      <field name="name">Collections</field>
+      <field name="model">my_module.serial</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="code"/>
+          <field name="collection"/>
         </tree>
       </field>
     </record>
@@ -20,6 +42,12 @@
     <record model="ir.actions.act_window" id="my_module.action_window">
       <field name="name">my_module window</field>
       <field name="res_model">my_module.my_module</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="my_module.action_window2">
+      <field name="name">Stories window</field>
+      <field name="res_model">my_module.stories</field>
       <field name="view_mode">tree,form</field>
     </record>
 
@@ -50,6 +78,9 @@
     <!-- actions -->
     <menuitem name="List" id="my_module.menu_1_list" parent="my_module.menu_1"
               action="my_module.action_window"/>
+    <menuitem name="List2" id="my_module.menu_1_list2" parent="my_module.menu_1"
+              action="my_module.action_window2"/>
+
     <menuitem name="Server to list" id="my_module" parent="my_module.menu_2"
               action="my_module.action_server"/>
   </data>
