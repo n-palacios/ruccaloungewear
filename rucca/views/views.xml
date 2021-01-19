@@ -78,7 +78,7 @@
 
     <!-- Top menu item -->
 
-    <menuitem name="Rucca Stories" id="rucca.menu_root" web_icon="rucca,static/src/icon.jpg"/>
+    <menuitem name="Rucca Stories" id="rucca.menu_root" web_icon="rucca,static/src/icon.png"/>
 
     <!-- menu actions -->
     <menuitem name="Collections" id="rucca.collections_menu" parent="rucca.menu_root" action="rucca.action_collections_window"/>

@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+'''
 from odoo import http
 
 class MyModule(http.Controller):
@@ -18,3 +19,4 @@ class MyModule(http.Controller):
         return http.request.render('rucca.object', {
             'object': obj
         })
+    '''
