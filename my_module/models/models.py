@@ -63,12 +63,12 @@ class Serial(models.Model):
         ondelete='set null'
     )
 
-class ProductTemplate(models.Model):
-    _inherit = 'product.template'
-
-    collection = fields.Many2one(
-        string='Collection',
-        help='Rucca collection associated with this serial.',
-        comodel_name='stories.collection',
-        ondelete='set null'
-    )
+# class ProductTemplate(models.Model):
+#     _inherit = 'product.template'
+#
+#     collection = fields.Many2one(
+#         string='Collection',
+#         help='Rucca collection associated with this serial.',
+#         comodel_name='stories.collection',
+#         ondelete='set null'
+#     )
