@@ -5,7 +5,7 @@
     'summary': """
         Stories, collections, and serial codes manaement app for Rucca Loungewear""",
 
-    'description': """
+    'src': """
         Stories, collections, and serial codes manaement app for Rucca Loungewear.
     """,
 
@@ -31,4 +31,7 @@
     'demo': [
         'demo/demo.xml',
     ],
+
+    'application': True,
+    'installable': True,
 }

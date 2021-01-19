@@ -14,7 +14,7 @@ class Collection(models.Model):
 
     description = fields.Text(
         string='Description',
-        help='Detailed description of the collection.'
+        help='Detailed src of the collection.'
     )
 
     launch_date = fields.Date(
