@@ -31,7 +31,7 @@
       <field name="model">my_module.serial</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="code"/>
+          <field name="name"/>
           <field name="collection"/>
         </tree>
       </field>
@@ -83,7 +83,7 @@
     <!-- menu actions -->
     <menuitem name="Collections" id="my_module.collections_menu" parent="my_module.menu_root" action="my_module.action_collections_window"/>
     <menuitem name="Stories" id="my_module.stories_menu" parent="my_module.menu_root" action="my_module.action_stories_window"/>
-    <menuitem name="Serial Codes" id="my_module.stories_menu" parent="my_module.menu_root" action="my_module.action_serials_window"/>
+    <menuitem name="Serial Codes" id="my_module.serials_menu" parent="my_module.menu_root" action="my_module.action_serials_window"/>
 
   </data>
 </odoo>

@@ -50,7 +50,7 @@ class Serial(models.Model):
     _name = 'my_module.serial'
     _description = 'Serial code associated with a collection.'
 
-    code = fields.Char(
+    name = fields.Char(
         string='Serial code',
         help='Unique serial code for a garment in a collection.'
     )
