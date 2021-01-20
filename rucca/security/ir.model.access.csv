@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_rucca_collection,rucca.collection,model_rucca_collection,,1,1,1,1
+access_rucca_story,rucca.story,model_rucca_story,,1,1,1,1
+access_rucca_serial,rucca.serial,model_rucca_serial,,1,1,1,1

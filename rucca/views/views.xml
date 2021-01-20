@@ -1,0 +1,89 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="rucca.collections_list">
+      <field name="name">Collections</field>
+      <field name="model">rucca.collection</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="launch_date"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="rucca.stories_list">
+      <field name="name">Collections</field>
+      <field name="model">rucca.story</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="user"/>
+          <field name="serial"/>
+          <field name="story"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="rucca.serials_list">
+      <field name="name">Collections</field>
+      <field name="model">rucca.serial</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="collection"/>
+        </tree>
+      </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="rucca.action_collections_window">
+      <field name="name">Collections</field>
+      <field name="res_model">rucca.collection</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="rucca.action_stories_window">
+      <field name="name">Stories</field>
+      <field name="res_model">rucca.story</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="rucca.action_serials_window">
+      <field name="name">Serial Codes</field>
+      <field name="res_model">rucca.serial</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="rucca.action_server">
+      <field name="name">rucca server</field>
+      <field name="model_id" ref="model_rucca_collection"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+
+    <!-- Top menu item -->
+
+    <menuitem name="Rucca Stories" id="rucca.menu_root" web_icon="rucca,static/src/icon.png"/>
+
+    <!-- menu actions -->
+    <menuitem name="Collections" id="rucca.collections_menu" parent="rucca.menu_root" action="rucca.action_collections_window"/>
+    <menuitem name="Stories" id="rucca.stories_menu" parent="rucca.menu_root" action="rucca.action_stories_window"/>
+    <menuitem name="Serial Codes" id="rucca.serials_menu" parent="rucca.menu_root" action="rucca.action_serials_window"/>
+
+  </data>
+</odoo>
