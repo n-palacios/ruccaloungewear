@@ -9,10 +9,7 @@ class RuccaController(http.Controller):
     def index(self, **kw):
         # necessary fields for a story
 
-        try:
-            serials = request.env['rucca.serial'].search(['name', '=', kw['Número de Serie']])
-        except Exception as e:
-            raise Exception(f'{e}\n\n{kw}')
+        serials = request.env['rucca.serial'].search(['name', '=', kw['Número de Serie']])
 
         if not serials:
             return {'warning': {
