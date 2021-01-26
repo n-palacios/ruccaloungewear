@@ -9,7 +9,7 @@ class RuccaController(http.Controller):
     def index(self, **kw):
         # necessary fields for a story
 
-        serials = request.env['rucca.serial'].sudo().search(['name', '=', kw['serial']])
+        serials = request.env['rucca.serial'].sudo().search([['name', '=', kw['serial']]])
 
         if not serials:
             return {'warning': {
