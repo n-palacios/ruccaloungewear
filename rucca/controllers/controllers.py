@@ -18,6 +18,7 @@ class RuccaController(http.Controller):
             }
         else:
             kw['serial'] = serials.id
-        raise Exception(serials)
+
         # create the story
         request.env['rucca.story'].sudo().create(kw)
+        raise Exception('the thing got created tho')
