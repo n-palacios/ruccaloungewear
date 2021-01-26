@@ -10,7 +10,7 @@ class RuccaController(http.Controller):
         # necessary fields for a story
 
         try:
-            serials = request.env['rucca.serial'].search(['name', '=', kw['serial']])
+            serials = request.env['rucca.serial'].search(['name', '=', kw['Número de Serie']])
         except Exception as e:
             raise Exception(f'{e}\n\n{kw}')
 
@@ -21,6 +21,7 @@ class RuccaController(http.Controller):
             }
         else:
             kw['serial'] = serials
+            kw['story'] = kw['Tu Historia']
 
         # create the story
         request.env['rucca.story'].sudo().create(kw)
