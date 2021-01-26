@@ -32,7 +32,7 @@ class Story(models.Model):
         string='Serial code',
         help='Serial code associated with this story.',
         comodel_name='rucca.serial',
-        ondelete='set null',
+        ondelete='restrict',
         required=True
     )
 
@@ -40,7 +40,7 @@ class Story(models.Model):
         string='User',
         help='User that owns the associated garment and story.',
         comodel_name='res.users',
-        ondelete='set null',
+        ondelete='cascade',
         required=True,
         default=lambda self: self.env.user
     )
@@ -68,7 +68,7 @@ class Serial(models.Model):
         string='Collection',
         help='Rucca collection associated with this serial.',
         comodel_name='rucca.collection',
-        ondelete='set null',
+        ondelete='restrict',
         required=True
     )
 
