@@ -8,7 +8,7 @@ class RuccaController(http.Controller):
     @http.route('/create_story/', auth='user', website=True)
     def index(self, **kw):
         # necessary fields for a story
-
+        raise Exception(kw)
         serials = request.env['rucca.serial'].search(['name', '=', kw['serial']])
 
         if not serials:
