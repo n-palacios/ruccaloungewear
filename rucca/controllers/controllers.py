@@ -21,4 +21,3 @@ class RuccaController(http.Controller):
 
         # create the story
         request.env['rucca.story'].sudo().create(kw)
-        raise Exception('the thing got created tho')
