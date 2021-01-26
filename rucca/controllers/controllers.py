@@ -22,4 +22,4 @@ class RuccaController(http.Controller):
         # create the story
         request.env['rucca.story'].sudo().create(kw)
 
-        return request.render('website.tu-historia-prendas-publicas')
+        return request.redirect('/historia-prendas-rucca')
