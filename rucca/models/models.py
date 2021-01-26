@@ -32,14 +32,17 @@ class Story(models.Model):
         string='Serial code',
         help='Serial code associated with this story.',
         comodel_name='rucca.serial',
-        ondelete='set null'
+        ondelete='restrict',
+        required=True
     )
 
     user = fields.Many2one(
         string='User',
         help='User that owns the associated garment and story.',
         comodel_name='res.users',
-        ondelete='set null'
+        ondelete='cascade',
+        required=True,
+        default=lambda self: self.env.user
     )
 
     story = fields.Text(
@@ -51,17 +54,22 @@ class Story(models.Model):
 class Serial(models.Model):
     _name = 'rucca.serial'
     _description = 'Serial code associated with a collection.'
+    _sql_constraints = [
+        ('name_unique', 'unique(name)', 'No puedes crear dos números de serie iguales!')
+        ]
 
     name = fields.Char(
         string='Serial code',
-        help='Unique serial code for a garment in a collection.'
+        help='Unique serial code for a garment in a collection.',
+        required=True
     )
 
     collection = fields.Many2one(
         string='Collection',
         help='Rucca collection associated with this serial.',
         comodel_name='rucca.collection',
-        ondelete='set null'
+        ondelete='restrict',
+        required=True
     )
 
 # class ProductTemplate(models.Model):

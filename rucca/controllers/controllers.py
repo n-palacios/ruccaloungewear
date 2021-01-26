@@ -1,22 +1,23 @@
 # -*- coding: utf-8 -*-
-'''
+
 from odoo import http
+from odoo.http import request
 
-class MyModule(http.Controller):
-    @http.route('/rucca/collection/', auth='public')
+
+class RuccaController(http.Controller):
+    @http.route('/create_story/', auth='user', website=True)
     def index(self, **kw):
-        return "Hello, world"
+        # necessary fields for a story
 
-    @http.route('/rucca/collection/objects/', auth='public')
-    def list(self, **kw):
-        return http.request.render('rucca.listing', {
-            'root': '/rucca/collection',
-            'objects': http.request.env['rucca.collection'].search([]),
-        })
+        serials = request.env['rucca.serial'].search(['name', '=', kw['serial']])
 
-    @http.route('/rucca/collection/objects/<model("rucca.collection"):obj>/', auth='public')
-    def object(self, obj, **kw):
-        return http.request.render('rucca.object', {
-            'object': obj
-        })
-    '''
+        if not serials:
+            return {'warning': {
+                'title': ('Advertencia'),
+                'message': ('El número serial ingresado no existe.')}
+            }
+        else:
+            kw['serial'] = serials
+
+        # create the story
+        request.env['rucca.story'].sudo().create(kw)
