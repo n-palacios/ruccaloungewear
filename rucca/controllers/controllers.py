@@ -17,7 +17,7 @@ class RuccaController(http.Controller):
                 'message': ('El número serial ingresado no existe.')}
             }
         else:
-            kw['serial'] = serials
+            kw['serial'] = serials.id
 
         # create the story
         request.env['rucca.story'].sudo().create(kw)
