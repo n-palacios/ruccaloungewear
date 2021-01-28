@@ -1,5 +1,6 @@
 <odoo>
     <data>
+        <!--
         <record id="create_serials_form" model="ir.ui.view">
         <field name="name">create_serials.form</field>
         <field name="model">warning</field>
@@ -13,5 +14,6 @@
             </form>
         </field>
     </record>
+        -->
     </data>
 </odoo>
