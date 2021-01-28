@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+        <record id="create_serials_form" model="ir.ui.view">
+        <field name="name">create_serials.form</field>
+        <field name="model">warning</field>
+        <field eval="20" name="priority"/>
+        <field name="arch" type="xml">
+            <form string="Warning" version="7.0">
+                <field name="message"  nolabel="1" />
+                <footer>
+                    <button string="OK" class="oe_highlight" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+    </data>
+</odoo>
