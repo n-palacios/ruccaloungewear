@@ -33,6 +33,7 @@
         <tree>
           <field name="name"/>
           <field name="collection"/>
+          <field name="product"/>
         </tree>
       </field>
     </record>

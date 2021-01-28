@@ -72,6 +72,14 @@ class Serial(models.Model):
         required=True
     )
 
+    product = fields.Many2one(
+        string='Product',
+        help='Garment associated with this serial code.',
+        comodel_name='product.template',
+        ondelete='restrict',
+        required=False
+    )
+
 # class ProductTemplate(models.Model):
 #     _inherit = 'product.template'
 #
