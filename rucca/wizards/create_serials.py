@@ -1,4 +1,4 @@
-from odoo import models, api
+from odoo import models, api, fields
 
 class CreateSerials(models.TransientModel):
     _name = 'create.serials'
