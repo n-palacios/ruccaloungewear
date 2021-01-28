@@ -30,7 +30,9 @@
       <field name="name">Collections</field>
       <field name="model">rucca.serial</field>
       <field name="arch" type="xml">
-        <button name="create_serials_button" string="Create Serial Codes" type="action" icon="fa-asterisk"/>
+        <header>
+          <button name="create_serials_button" string="Create Serial Codes" type="action" icon="fa-asterisk"/>
+        </header>
         <tree>
           <field name="name"/>
           <field name="collection"/>
