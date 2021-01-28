@@ -4,9 +4,6 @@
            <ul>
              <li t-foreach="objects" t-as="object">
                <a t-attf-href="#{ root }/objects/#{ object.id }">
-                   <t t-if="widget.modelName == 'stock.quant'">
-                       <button id="custom_print_btn" class="btn btn-primary o_list_button_custom_print" type="button" >Print</button>
-                   </t>
                  <t t-esc="object.display_name"/>
                </a>
              </li>
