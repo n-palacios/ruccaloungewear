@@ -38,9 +38,6 @@
         </form>
         -->
         <tree>
-          <header>
-            <button name="create_serials" string="Create Serial Codes" type="object" />
-          </header>
           <field name="name"/>
           <field name="collection"/>
           <field name="product"/>
