@@ -21,4 +21,4 @@ class RuccaController(http.Controller):
 
         # create the story
         request.env['rucca.story'].sudo().create(kw)
-       return('/las-prendas-rucca')
+       return redirect('https://ruccaloungewear.odoo.com/las-prendas-rucca')
