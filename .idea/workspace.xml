@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="425d4a7c-fb21-4a74-85f5-69077b1b48b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_module/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rucca/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_module/controllers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rucca/controllers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_module/demo/demo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rucca/demo/demo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_module/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rucca/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_module/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/rucca/security/ir.model.access.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_module/views/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rucca/views/templates.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rucca/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rucca/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rucca/controllers/controllers.py" beforeDir="false" afterPath="$PROJECT_DIR$/rucca/controllers/controllers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rucca/models/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rucca/models/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rucca/static/description/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/rucca/static/src/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rucca/views/views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rucca/views/views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/__manifest__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/controllers/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/controllers/controllers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/demo/demo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/models/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/security/ir.model.access.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/views/templates.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/views/views.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="425d4a7c-fb21-4a74-85f5-69077b1b48b6" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
