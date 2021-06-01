@@ -21,8 +21,3 @@ class RuccaController(http.Controller):
 
         # create the story
         request.env['rucca.story'].sudo().create(kw)
-<<<<<<< HEAD
-
-
-=======
->>>>>>> parent of 9b6fb1b (Update controllers.py)
