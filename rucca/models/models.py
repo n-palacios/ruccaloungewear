@@ -82,10 +82,3 @@ class Serial(models.Model):
 #         comodel_name='rucca.collection',
 #         ondelete='set null'
 #     )
- class Facturacion(models.Model):
-     _inherit = 'acoount.invoice.send'
-
-    def send_and_print_action(self, values):
-        res = super(Facturacion, self).send_and_print_action(values)
-        raise Exception('Mensaje de prueba')
-        return res
