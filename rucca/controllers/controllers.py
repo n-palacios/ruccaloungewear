@@ -5,7 +5,7 @@ from odoo.http import request
 
 
 class RuccaController(http.Controller):
-    @http.route('/create_story', auth='user', website=True)
+    @http.route('/create_story/', auth='user', website=True)
     def index(self, **kw):
         # necessary fields for a story
         raise Exception(kw)
@@ -21,5 +21,8 @@ class RuccaController(http.Controller):
 
         # create the story
         request.env['rucca.story'].sudo().create(kw)
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> parent of 9b6fb1b (Update controllers.py)
