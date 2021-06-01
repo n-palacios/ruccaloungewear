@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from odoo.exceptions import ValidationError
 
 
 class Collection(models.Model):
@@ -81,3 +82,10 @@ class Serial(models.Model):
 #         comodel_name='rucca.collection',
 #         ondelete='set null'
 #     )
+ class Facturacion(models.Model):
+     _inherit = 'acoount.invoice.send'
+
+    def send_and_print_action(self, values):
+        res = super(Facturacion, self).send_and_print_action(values)
+        raise validationError('Mensaje de prueba')
+        return res
