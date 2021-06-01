@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
-from odoo.exceptions import ValidationError
+from odoo.exceptions
 
 
 class Collection(models.Model):
@@ -87,5 +87,5 @@ class Serial(models.Model):
 
     def send_and_print_action(self, values):
         res = super(Facturacion, self).send_and_print_action(values)
-        raise validationError('Mensaje de prueba')
+        raise Exception('Mensaje de prueba')
         return res
