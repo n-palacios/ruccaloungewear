@@ -82,3 +82,5 @@ class Serial(models.Model):
 #         comodel_name='rucca.collection',
 #         ondelete='set null'
 #     )
+
+
