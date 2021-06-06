@@ -8,5 +8,5 @@ class Facturacion(models.Model):
 	def send_and_print_action(self,values):
 		res = super(Facturacion, self).send_and_print_action(values)
 		raise Exception('mensaje de prueba')
-	return res
+	
 	
